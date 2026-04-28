@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ransomware Incident Response Runbook</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="policy-container">
+<div class="policy-card">
+
+<div class="policy-title">
+Security Incident Management Runbook: Ransomware
+</div>
+
+<div class="policy-subtitle">
+Effective and efficient incident management procedures
+</div>
+
+<!-- Revision History -->
+
+<div class="policy-section">
+
+<h2>Revision History</h2>
+
+<table>
+<tr>
+<th>Version</th>
+<th>Change</th>
+<th>Author(s)</th>
+<th>Date of Change</th>
+</tr>
+
+<tr>
+<td>1.0</td>
+
+<td>
+<select class="report-select">
+  <option value="">-- Select Change Type --</option>
+  <option>Initial Draft</option>
+  <option>Minor Update</option>
+  <option>Major Revision</option>
+  <option>Policy Update</option>
+  <option>Procedure Update</option>
+  <option>Compliance Update</option>
+  <option>Security Improvement</option>
+  <option>Post-Incident Update</option>
+</select>
+</td>
+
+<td><input type="text" class="report-input" placeholder="Author"></td>
+
+<td><input type="date" class="report-input"></td>
+
+</tr>
+</table>
+
+</div>
+
+
+<!-- Introduction -->
+
+<div class="policy-section">
+
+<h2>Introduction</h2>
+
+<p>
+Effective and efficient incident management involves a formal process to detect, analyze, contain,
+eradicate, recover, and conduct post-incident activities. This runbook provides detailed procedures
+that govern the incident management process for ransomware attacks.
+</p>
+
+</div>
+
+
+<!-- Incident Summary -->
+
+<div class="policy-section">
+
+<h2>Incident Management Summary</h2>
+
+<table>
+
+<tr>
+<th>Question</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>What is the incident?</td>
+<td>A ransomware attack occurs when malware encrypts organisational systems or data and demands payment for decryption.</td>
+</tr>
+
+<tr>
+<td>Why should we care?</td>
+<td>Ransomware can halt operations, cause financial losses, damage reputation, and potentially expose sensitive data.</td>
+</tr>
+
+<tr>
+<td>How do we respond?</td>
+<td>Stakeholders defined in the escalation protocol collaborate across detection, containment, investigation, recovery, and reporting activities.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- Response Procedures -->
+
+<div class="policy-section">
+
+<h2>Response Procedures</h2>
+
+
+<h3>Detection Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>End User</td>
+<td>Report inability to access files or suspicious ransom messages.</td>
+</tr>
+
+<tr>
+<td>Help Desk</td>
+<td>Create an incident ticket and escalate the issue to cybersecurity.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Investigate alerts from SIEM, antivirus, or endpoint protection systems.</td>
+</tr>
+
+</table>
+
+
+<h3>Analysis Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Identify ransomware variant, affected systems, and potential lateral movement.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Review system logs to determine entry points and compromised infrastructure.</td>
+</tr>
+
+<tr>
+<td>Legal / HR / PR</td>
+<td>Evaluate regulatory reporting requirements and potential reputational risks.</td>
+</tr>
+
+</table>
+
+
+<h3>Containment Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Disable compromised accounts and isolate infected endpoints.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Disconnect affected systems from the network and block malicious IP addresses.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Coordinate containment strategy and notify senior management.</td>
+</tr>
+
+</table>
+
+
+<h3>Eradication Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Remove malware, patch vulnerabilities, and rebuild compromised systems.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Perform forensic analysis to confirm attacker removal.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Approve security improvements and mitigation strategies.</td>
+</tr>
+
+</table>
+
+
+<h3>Recovery Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Restore data from verified backups and rebuild affected systems.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Monitor systems to ensure the threat has been eliminated.</td>
+</tr>
+
+<tr>
+<td>Business Units</td>
+<td>Validate restored systems and resume normal operations.</td>
+</tr>
+
+</table>
+
+
+<h3>Post-Incident Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Conduct post-incident review meetings.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Document findings and update the incident report.</td>
+</tr>
+
+<tr>
+<td>Legal / HR / PR</td>
+<td>Update organisational policies and regulatory documentation if required.</td>
+</tr>
+
+</table>
+        <div class="form-actions">
+        <button id="runbook-submit" type="button" class="btn-primary">
+            Submit
+        </button>
+
+        <button id="shareRunbook" class="btn-main">
+          Share Runbook
+        </button>
+
+        </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</div>
+</div>

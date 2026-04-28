@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Security Risk Result</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="question-card">
+
+    <h1>Your Security Risk Score</h1>
+    <h2 id="score"></h2>
+    <h3 id="risk"></h3>
+
+    <!-- Go back button -->
+    <button id="Download" type="button" class="btn-secondary" onclick="goBack()">Back</button>
+    
+    <button id="shareResults" class="btn-main">
+      Share Results
+    </button>
+
+  </div>
+</div>
+<!-- Linking JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

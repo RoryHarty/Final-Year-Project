@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Maturity Questionnaire</title>
+
+  <!-- Linking CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+</div>
+  <div class="container">
+    <div class="form-header">
+      <h1>Security Maturity Questionnaire</h1>
+      <p>
+        Please answer all questions to assess your organisation's cybersecurity risk level.
+      </p>
+    </div>
+
+    <div id="questionnaire">
+  <!-- Multiple Choice Questions -->
+
+<div class="question-card">
+<p class="question">1. How is cybersecurity governance structured within the organisation?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q1" score="0"> Dedicated security leadership (e.g. CISO) with formal governance structure
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q1" score="1"> Security responsibilities assigned to IT management
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q1" score="3"> Security responsibilities shared informally among IT staff
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q1" score="5"> No defined responsibility for cybersecurity governance
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">2. How frequently are cybersecurity risks formally assessed?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q2" score="0"> Continuous monitoring with regular formal risk assessments
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q2" score="1"> Formal risk assessments conducted annually
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q2" score="3"> Risk assessments conducted occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q2" score="5"> No formal cybersecurity risk assessment process
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">3. How are cybersecurity risks tracked and managed?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q3" score="0"> Risks tracked through a formal risk register with assigned owners
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q3" score="1"> Risks documented and reviewed periodically
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q3" score="3"> Some risks tracked but inconsistently
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q3" score="5"> No formal tracking of cybersecurity risks
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">4. How are user authentication controls implemented across systems?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q4" score="0"> Multi-Factor Authentication enforced for all users and critical systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q4" score="1"> MFA implemented for privileged or remote access accounts
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q4" score="3"> Password authentication with some security policies
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q4" score="5"> No formal authentication security controls
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">5. How are privileged or administrative accounts protected?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q5" score="0"> Privileged Access Management (PAM) with monitoring and MFA
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q5" score="1"> Privileged accounts restricted and logged
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q5" score="3"> Admin privileges exist with limited monitoring
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q5" score="5"> No controls over privileged access
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">6. How is remote access to organisational systems secured?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q6" score="0"> VPN with MFA and device security checks enforced
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q6" score="1"> VPN required for remote connections
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q6" score="3"> Remote access allowed with limited controls
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q6" score="5"> Remote access allowed without security controls
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">7. How are cybersecurity incidents managed within the organisation?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q7" score="0"> Formal incident response plan tested through exercises
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q7" score="1"> Documented incident response procedures
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q7" score="3"> Informal response processes exist
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q7" score="5"> No incident response procedures defined
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">8. How are endpoints protected against malware and unauthorised activity?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q8" score="0"> Endpoint Detection & Response (EDR/XDR) with central monitoring
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q8" score="1"> Enterprise antivirus deployed across all devices
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q8" score="3"> Basic antivirus installed on some systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q8" score="5"> No endpoint protection tools
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">9. How are security patches and system updates managed?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q9" score="0"> Automated patch management with defined remediation timelines
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q9" score="1"> Scheduled patch deployment using central tools
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q9" score="3"> Manual patching performed occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q9" score="5"> No consistent patch management process
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">10. How are network and security events monitored?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q10" score="0"> Centralised SIEM with continuous monitoring and alerting
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q10" score="1"> Centralised log monitoring with defined alert rules
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q10" score="3"> Logs collected but reviewed manually
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q10" score="5"> No monitoring of network or security events
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">11. How are system vulnerabilities identified and tracked?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q11" score="0"> Continuous vulnerability scanning with a formal vulnerability management programme
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q11" score="1"> Regular vulnerability scans performed monthly or quarterly
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q11" score="3"> Occasional vulnerability scanning performed
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q11" score="5"> No vulnerability scanning or tracking of vulnerabilities
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">12. How are identified vulnerabilities remediated?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q12" score="0"> Vulnerabilities remediated within defined SLAs based on severity
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q12" score="1"> Most vulnerabilities addressed within reasonable timeframes
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q12" score="3"> Vulnerabilities addressed inconsistently
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q12" score="5"> No defined vulnerability remediation process
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">13. Which cybersecurity standards or frameworks guide the organisation's security practices?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q13" score="0"> Multiple recognised frameworks implemented (e.g. ISO 27001, NIST CSF, NIS2)
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q13" score="1"> One recognised cybersecurity framework implemented
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q13" score="3"> Informal alignment with industry standards
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q13" score="5"> No recognised cybersecurity frameworks followed
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">14. How are audit logs and security records maintained?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q14" score="0"> Centralised log management with defined retention and auditing policies
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q14" score="1"> Logs collected and stored for periodic review
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q14" score="3"> Logs generated but rarely reviewed
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q14" score="5"> No logging or audit trail maintained
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">15. How are endpoint devices protected against malware and malicious activity?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q15" score="0"> Advanced endpoint security (EDR/XDR) with centralised monitoring
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q15" score="1"> Enterprise antivirus deployed across all endpoints
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q15" score="3"> Basic antivirus protection on some systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q15" score="5"> No endpoint protection tools deployed
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">16. How are security patches applied to systems and applications?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q16" score="0"> Automated patch management with prioritisation based on vulnerability severity
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q16" score="1"> Scheduled patch deployment through centralised tools
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q16" score="3"> Manual patching performed periodically
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q16" score="5"> No consistent patch management process
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">17. How are sensitive organisational data protected?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q17" score="0"> Data encrypted in transit and at rest with secure key management
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q17" score="1"> Encryption applied to critical systems or sensitive data
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q17" score="3"> Limited or partial encryption practices
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q17" score="5"> Sensitive data stored or transmitted without encryption
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">18. How are network activities monitored for suspicious behaviour?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q18" score="0"> Continuous monitoring using SIEM or SOC services
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q18" score="1"> Network monitoring tools with alerting capabilities
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q18" score="3"> Logs reviewed manually or occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q18" score="5"> No monitoring of network or system activity
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">19. How are external vendors or third-party providers assessed for cybersecurity risk?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q19" score="0"> Formal third-party risk management programme with security assessments
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q19" score="1"> Vendor security questionnaires or compliance checks performed
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q19" score="3"> Vendors reviewed informally for security risks
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q19" score="5"> No security assessment of vendors
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">20. How are third-party service disruptions or security failures handled?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q20" score="0"> Formal contingency plans and resilience strategies in place
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q20" score="1"> Backup vendors or fallback systems defined
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q20" score="3"> Limited contingency planning
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q20" score="5"> No contingency planning for third-party failures
+</label>
+
+<p class="result"></p>
+</div>
+
+
+<div class="question-card">
+<p class="question">21. How are third-party vendors required to meet cybersecurity standards?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q21" score="0"> Vendors must meet defined cybersecurity standards with contractual security requirements
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q21" score="1"> Vendors required to complete security questionnaires or compliance checks
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q21" score="3"> Vendors reviewed informally for security risks
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q21" score="5"> No cybersecurity requirements for vendors
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">22. How are vendor cybersecurity practices monitored after onboarding?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q22" score="0"> Continuous monitoring or regular security reassessments of vendors
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q22" score="1"> Periodic vendor security reviews
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q22" score="3"> Vendor security reviewed only when issues arise
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q22" score="5"> Vendor cybersecurity practices not monitored
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">23. How is remote access to internal systems monitored and controlled?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q23" score="0"> Remote access restricted, monitored, and protected by MFA
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q23" score="1"> Remote access restricted through VPN with monitoring
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q23" score="3"> Remote access allowed with limited monitoring
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q23" score="5"> Remote access allowed without monitoring or restrictions
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">24. How does the organisation prepare for failures of third-party services?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q24" score="0"> Formal resilience planning with tested contingency procedures
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q24" score="1"> Backup providers or fallback systems defined
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q24" score="3"> Informal contingency planning
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q24" score="5"> No contingency planning for third-party failures
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">25. How are IT systems and digital assets tracked within the organisation?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q25" score="0"> Complete asset inventory maintained and regularly updated
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q25" score="1"> Asset inventory maintained but not frequently updated
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q25" score="3"> Partial inventory of systems or devices
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q25" score="5"> No inventory of IT systems or assets
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">26. How is sensitive data protected during storage and transmission?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q26" score="0"> Data encrypted in transit and at rest with enforced security policies
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q26" score="1"> Encryption applied to most sensitive systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q26" score="3"> Encryption used only in limited cases
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q26" score="5"> Sensitive data not protected by encryption
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">27. How are security procedures and policies documented?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q27" score="0"> Comprehensive security policies documented and regularly reviewed
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q27" score="1"> Security policies documented but reviewed infrequently
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q27" score="3"> Some informal security procedures exist
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q27" score="5"> No documented cybersecurity policies
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">28. How are user access privileges managed when employees change roles or leave?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q28" score="0"> Automated identity lifecycle management with immediate access revocation
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q28" score="1"> Access reviewed and revoked through formal processes
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q28" score="3"> Access removal handled manually and inconsistently
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q28" score="5"> Access privileges rarely reviewed or removed
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">29. How frequently are cybersecurity tests such as penetration tests or vulnerability assessments performed?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q29" score="0"> Regular penetration testing and continuous vulnerability assessment
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q29" score="1"> Annual security testing performed
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q29" score="3"> Security testing performed occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q29" score="5"> No cybersecurity testing performed
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">30. How is Multi-Factor Authentication implemented across critical systems?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q30" score="0"> MFA enforced for all users and critical systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q30" score="1"> MFA used for privileged or remote access accounts
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q30" score="3"> MFA implemented only on a few systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q30" score="5"> No MFA implemented
+</label>
+
+<p class="result"></p>
+</div>
+
+
+
+<div class="question-card">
+<p class="question">31. How are security logs and threat indicators analysed to detect potential attacks?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q31" score="0"> Dedicated SOC or SIEM platform continuously analysing security logs
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q31" score="1"> Centralised log monitoring with defined alerting rules
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q31" score="3"> Logs reviewed manually when issues arise
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q31" score="5"> Security logs not actively monitored
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">32. How frequently are security events reviewed by security or IT personnel?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q32" score="0"> Security events continuously monitored by security teams or SOC
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q32" score="1"> Security events reviewed daily or weekly
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q32" score="3"> Security events reviewed occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q32" score="5"> Security events are not regularly reviewed
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">33. How does the organisation use threat intelligence to improve its security posture?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q33" score="0"> External threat intelligence feeds integrated into monitoring systems
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q33" score="1"> Security teams regularly review external threat intelligence sources
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q33" score="3"> Threat intelligence reviewed occasionally
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q33" score="5"> No use of external threat intelligence
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">34. How does the organisation prepare to recover from cybersecurity incidents or system failures?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q34" score="0"> Formal disaster recovery and business continuity plans regularly tested
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q34" score="1"> Disaster recovery plans documented but rarely tested
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q34" score="3"> Informal recovery procedures exist
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q34" score="5"> No disaster recovery or incident recovery plans
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">35. How frequently are backups of critical systems and data performed?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q35" score="0"> Automated daily backups with offsite or immutable storage
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q35" score="1"> Regular backups performed several times per week
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q35" score="3"> Periodic backups performed monthly
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q35" score="5"> No consistent backup process
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">36. How often are backup recovery procedures tested?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q36" score="0"> Recovery procedures tested regularly through disaster recovery exercises
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q36" score="1"> Recovery procedures tested annually
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q36" score="3"> Recovery procedures rarely tested
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q36" score="5"> Recovery procedures never tested
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">37. How are organisational data protected when accessed from personal or unmanaged devices?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q37" score="0"> Endpoint management and device compliance controls enforced
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q37" score="1"> Security policies applied to personal device access
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q37" score="3"> Limited controls on personal device access
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q37" score="5"> No controls on personal device access
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">38. How is cybersecurity awareness training delivered to employees?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q38" score="0"> Continuous security awareness programme with phishing simulations
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q38" score="1"> Regular cybersecurity awareness training sessions
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q38" score="3"> Occasional security awareness communications
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q38" score="5"> No cybersecurity awareness training
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">39. How frequently are employees informed about emerging cybersecurity threats?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q39" score="0"> Continuous communication through security alerts and awareness campaigns
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q39" score="1"> Regular updates provided quarterly
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q39" score="3"> Occasional updates provided
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q39" score="5"> Employees not informed about emerging threats
+</label>
+
+<p class="result"></p>
+</div>
+
+<div class="question-card">
+<p class="question">40. How are newly identified cybersecurity risks evaluated and prioritised?</p>
+
+<label class="checkbox-option">
+<input type="radio" name="q40" score="0"> Formal risk management framework used to evaluate and prioritise risks
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q40" score="1"> Risks evaluated through defined internal security processes
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q40" score="3"> Risks addressed informally when discovered
+</label>
+
+<label class="checkbox-option">
+<input type="radio" name="q40" score="5"> No structured process for evaluating cybersecurity risks
+</label>
+
+<p class="result"></p>
+</div>
+
+    <div class="form-actions">
+      <!-- Downlaod button - Downnloads PDF file -->
+        <button id="Download" type="button" class="btn-secondary">
+          Download record
+    </button>
+    <!-- Submit button - Leads user to result -->
+    <button id="Submit" type="button" class="btn-primary" >
+      Submit
+    </button>
+        <!-- Share -->
+      <button id="shareEmail" type="button" class="btn-secondary">
+        Share via Email
+      </button>
+      
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Linking JavaScript file and setting up download of PDF file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

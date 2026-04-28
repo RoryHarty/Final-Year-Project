@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Incident Management Runbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="policy-container">
+    <div class="policy-card">
+        <div class="policy-title">
+            Security Incident Management Runbook: Data Breach 
+        </div>
+        <div class="policy-subtitle">
+            Effective and efficient incident management procedures 
+        </div>
+
+        <div class="policy-section">
+            <h2>Revision History </h2>
+            <table>
+                <tr>
+                    <th>Version</th>
+                    <th>Change</th>
+                    <th>Author(s)</th>
+                    <th>Date of Change</th>
+                </tr>
+                <tr>
+        <td>1.0</td>
+
+            <td>
+                <select class="report-select">
+                    <option value="Initial Draft">Initial Draft</option>
+                    <option value="Minor Update">Minor Update</option>
+                    <option value="Major Revision">Major Revision</option>
+                    <option value="Policy Update">Policy Update</option>
+                    <option value="Procedure Update">Procedure Update</option>
+                    <option value="Compliance Update">Compliance Update</option>
+                    <option value="Security Improvement">Security Improvement</option>
+                    <option value="Post-Incident Update">Post-Incident Update</option>
+                    </select>
+</td>
+
+<td><input type="text" class="report-input" placeholder="Author"></td>
+<td><input type="date" class="report-input"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="policy-section">
+            <h2>Introduction</h2>
+            <p> Effective and efficient incident management involves a formal process to detect, analyze, contain, eradicate, recover, 
+                and conduct post-incident activities. This runbook provides detailed procedures that govern the incident management
+                process to handle data breach incidents.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>Incident Assessment Methodology</h2>
+            <p>The incident assessment methodology consists of the evaluation of impact, scope, and threat escalation.</p>
+            
+            <h3>Impact </h3>
+            <p>The evaluation of the effects of a data breach on business functions, data, and recovery efforts. Factors include current 
+                and future functional impact, informational impact (confidentiality, integrity, availability), and the time/resources 
+                required for recovery.</p>
+            <table>
+                <tr>
+                    <th>Rating</th>
+                    <th>Definition </th>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td>Exposes highly sensitive/regulated data (PII, PHI, PCI); likely to impose major costs and interrupt business continuity.</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>Exposes internal/confidential data; damaging but no regulatory or legal implications.</td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td>Exposes data that is otherwise public; the manner obtained warrants a security incident.</td>
+                </tr>
+            </table>
+
+            <h3>Scope </h3>
+            <p>The evaluation of the effects on information technology (IT) systems. Scope is a critical component for 
+                decision-making.</p>
+            <table>
+                <tr>
+                    <th>Rating</th>
+                    <th>Definition</th>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td>≥100 records exfiltrated</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>11-99 records exfiltrated</td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td>≤10 records exfiltrated</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="policy-section">
+            <h2>Threat Escalation Protocol </h2>
+            <p>This protocol defines the stakeholders needed during the incident management process. Informing and consulting these
+                stakeholders is crucial when defending against a data breach.</p>
+            <table>
+                <tr>
+                    <th>Impact / Scope</th>
+                    <th>High</th>
+                    <th>Medium</th>
+                    <th>Low</th>
+                </tr>
+                <tr>
+                    <th>High</th>
+                    <td>Tier 1</td>
+                    <td>Tier 1</td>
+                    <td>Tier 2</td>
+                </tr>
+                <tr>
+                    <th>Medium</th>
+                    <td>Tier 1</td>
+                    <td>Tier 2</td>
+                    <td>Tier 2</td>
+                </tr>
+                <tr>
+                    <th>Low</th>
+                    <td>Tier 2</td>
+                    <td>Tier 2</td>
+                    <td>Tier 3</td>
+                </tr>
+            </table>
+            
+            <h3>Stakeholder Definition </h3>
+            <table>
+                <tr>
+                    <th>Tier</th>
+                    <th>Stakeholders</th>
+                </tr>
+                <tr>
+                    <td>Tier 1</td>
+                    <td>End User, Help Desk, Cybersecurity, IT Operations, CISO, Legal, HR, PR, Senior Management, External Third Parties</td>
+                </tr>
+                <tr>
+                    <td>Tier 2</td>
+                    <td>End User, Help Desk, Cybersecurity, IT Operations, CISO</td>
+                </tr>
+                <tr>
+                    <td>Tier 3</td>
+                    <td>End User, Help Desk, Cybersecurity</td>
+                </tr>
+            </table>
+        </div>
+
+<div class="policy-section">
+
+    <h2>Incident Management Summary</h2>
+
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>What is the incident?</td>
+                <td>A data breach occurs when records are exposed through internal error or attack. Commonly involves PII, but loss of such data is not required for a breach to occur.</td>
+                </tr>
+            <tr>
+                <td>Why should we care?</td>
+                <td>A breach can cause huge financial and reputational damage and legal implications.</td>
+            </tr>
+            <tr>
+                <td>How do we respond?</td>
+                <td>Stakeholders defined in the escalation protocol work collaboratively across major activities (monitoring, analysis, isolation, reporting).</td>
+            </tr>
+        </table>
+
+</div>
+
+        <div class="policy-section">
+            <h2>Response Procedures</h2>
+
+            <h3>Detection Phase</h3>
+            <p>Teams evaluate potential incidents, such as suspicious log activity or user reports.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action </th>
+                </tr>
+                <tr>
+                    <td>End User</td>
+                    <td>Report known or suspected breach of data.</td>
+                </tr>
+                <tr>
+                    <td>Help Desk</td>
+                    <td>Open a help desk ticket.</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Monitor systems and open incident records as appropriate.</td>
+                </tr>
+            </table>
+
+            <h3>Analysis Phase</h3>
+            <p>Teams determine the impact of the threat to guide remediation and escalation.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action </th>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Analyze logs, identify points of failure, determine business impact, and notify CISO if significant.</td>
+                </tr>
+                <tr>
+                    <td>IT Operations</td>
+                    <td>Review server logs to determine attack vector and exposed vulnerabilities.</td>
+                </tr>
+                <tr>
+                    <td>Legal/HR/PR</td>
+                    <td>Evaluate regulatory compliance (GDPR/HIPAA) and reputational damage.</td>
+                </tr>
+            </table>
+
+            <h3>Containment Phase </h3>
+            <p>Isolate affected systems and block attacker access to the network.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Disable breached accounts and update system passwords.</td>
+                </tr>
+                <tr>
+                    <td>IT Operations</td>
+                    <td>Close unnecessary ports and block malicious IPs.</td>
+                </tr>
+                <tr>
+                    <td>Legal/HR/PR</td>
+                    <td>Notify affected stakeholders as per GDPR/PIPEDA requirements.</td>
+                </tr>
+            </table>
+
+            <h3>Eradication Phase</h3>
+            <p>Eliminate incident components (malware) and mitigate exploited vulnerabilities.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>IT Operations</td>
+                    <td>Patch systems and address vulnerability gaps.</td>
+                </tr>
+                <tr>
+                    <td>CISO</td>
+                    <td>Approve new security controls and strategies.</td>
+                </tr>
+                <tr>
+                    <td>Senior Management</td>
+                    <td>Allocate budget and resources for eradication.</td>
+                </tr>
+            </table>
+
+            <h3>Recovery Phase</h3>
+            <p>Restore systems to normal operation and confirm full functionality.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Validate systems are back to normal and update incident record.</td>
+                </tr>
+                <tr>
+                    <td>IT Operations</td>
+                    <td>Restore data and scan systems for normal operations.</td>
+                </tr>
+            </table>
+
+            <h3>Post-Incident Phase</h3>
+            <p>Perform root-cause analysis and lessons-learned activities for continuous improvement.</p>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>CISO</td>
+                    <td>Facilitate post-incident meetings and lessons-learned sessions.</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Document all findings in a final incident report.</td>
+                </tr>
+                <tr>
+                    <td>Legal/HR/PR</td>
+                    <td>Update policies based on lessons learned.</td>
+                </tr>
+            </table>
+        <div class="form-actions">
+        <button id="runbook-submit" type="button" class="btn-primary">
+            Submit
+        </button>
+
+        <button id="shareRunbook" class="btn-main">
+          Share Runbook
+        </button>
+
+        </div>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DDoS Incident Response Runbook</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="policy-container">
+<div class="policy-card">
+
+<div class="policy-title">
+Security Incident Management Runbook: DDoS Attack
+</div>
+
+<div class="policy-subtitle">
+Procedures for detecting and mitigating Distributed Denial of Service attacks
+</div>
+
+
+<!-- Revision History -->
+
+<div class="policy-section">
+
+<h2>Revision History</h2>
+
+<table>
+
+<tr>
+<th>Version</th>
+<th>Change</th>
+<th>Author(s)</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>1.0</td>
+
+<td>
+<select class="report-select">
+  <option value="">-- Select Change Type --</option>
+  <option>Initial Draft</option>
+  <option>Minor Update</option>
+  <option>Major Revision</option>
+  <option>Policy Update</option>
+  <option>Procedure Update</option>
+  <option>Compliance Update</option>
+  <option>Security Improvement</option>
+  <option>Post-Incident Update</option>
+</select>
+</td>
+
+<td><input type="text" class="report-input" placeholder="Author"></td>
+<td><input type="date" class="report-input"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- Introduction -->
+
+<div class="policy-section">
+
+<h2>Introduction</h2>
+
+<p>
+A Distributed Denial of Service (DDoS) attack attempts to disrupt normal access
+to services by overwhelming systems with excessive traffic. These attacks may
+target web applications, APIs, network infrastructure, or cloud services.
+</p>
+
+<p>
+This runbook outlines procedures for identifying, analysing, containing,
+and recovering from DDoS incidents to restore service availability.
+</p>
+
+</div>
+
+
+<!-- Incident Management Summary -->
+
+<div class="policy-section">
+
+<h2>Incident Management Summary</h2>
+
+<table>
+
+<tr>
+<th>Question</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>What is the incident?</td>
+<td>Malicious traffic designed to overwhelm services and prevent legitimate users from accessing systems.</td>
+</tr>
+
+<tr>
+<td>Why should we care?</td>
+<td>DDoS attacks can disrupt services, damage reputation, and lead to financial losses.</td>
+</tr>
+
+<tr>
+<td>How do we respond?</td>
+<td>Security teams monitor abnormal traffic patterns, implement traffic filtering, scale infrastructure, and restore normal service operations.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- Response Procedures -->
+
+<div class="policy-section">
+
+<h2>Response Procedures</h2>
+
+
+<h3>Detection Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Monitoring Systems</td>
+<td>Detect abnormal traffic spikes or service degradation through monitoring alerts.</td>
+</tr>
+
+<tr>
+<td>Help Desk</td>
+<td>Log reports from users experiencing slow or unavailable services.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Review network traffic, firewall alerts, and SIEM logs to confirm DDoS activity.</td>
+</tr>
+
+</table>
+
+
+<h3>Analysis Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Analyse traffic patterns to determine attack vector (HTTP flood, SYN flood, UDP reflection).</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Review server and load balancer performance metrics.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Assess impact and determine escalation level.</td>
+</tr>
+
+</table>
+
+
+<h3>Containment Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Apply firewall or WAF rules to block malicious IP ranges.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Enable rate limiting and traffic filtering.</td>
+</tr>
+
+<tr>
+<td>Network Team</td>
+<td>Activate DDoS protection services (e.g., CDN or cloud protection services).</td>
+</tr>
+
+</table>
+
+
+<h3>Eradication Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Identify attack sources and block malicious domains, IP addresses, and networks.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Scale infrastructure resources to maintain service availability.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Approve additional mitigation measures and resource allocation.</td>
+</tr>
+
+</table>
+
+
+<h3>Recovery Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Confirm service availability and system stability.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Monitor traffic patterns for recurring attacks.</td>
+</tr>
+
+<tr>
+<td>Business Units</td>
+<td>Verify systems are functioning normally for users.</td>
+</tr>
+
+</table>
+
+
+<h3>Post-Incident Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Conduct post-incident review and lessons learned.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Update detection rules and monitoring alerts.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Improve infrastructure resilience and scaling policies.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="form-actions">
+
+  <button id="runbook-submit" type="button" class="btn-primary">
+  Download Runbook
+  </button>
+
+      <button id="shareRunbook" class="btn-main">
+        Share Runbook
+      </button>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

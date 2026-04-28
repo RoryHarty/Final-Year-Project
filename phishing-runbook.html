@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Incident Response Runbook</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="policy-container">
+<div class="policy-card">
+
+<div class="policy-title">
+Security Incident Management Runbook: Phishing Attack
+</div>
+
+<div class="policy-subtitle">
+Procedures for detecting, analysing, and responding to phishing attacks
+</div>
+
+<!-- Revision History -->
+
+<div class="policy-section">
+
+<h2>Revision History</h2>
+
+<table>
+<tr>
+<th>Version</th>
+<th>Change</th>
+<th>Author(s)</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>1.0</td>
+
+<td>
+<select class="report-select">
+  <option value="">-- Select Change Type --</option>
+  <option>Initial Draft</option>
+  <option>Minor Update</option>
+  <option>Major Revision</option>
+  <option>Policy Update</option>
+  <option>Procedure Update</option>
+  <option>Compliance Update</option>
+  <option>Security Improvement</option>
+  <option>Post-Incident Update</option>
+</select>
+</td>
+
+<td><input type="text" class="report-input" placeholder="Author"></td>
+<td><input type="date" class="report-input"></td>
+
+</tr>
+</table>
+
+</div>
+
+
+<!-- Introduction -->
+
+<div class="policy-section">
+
+<h2>Introduction</h2>
+
+<p>
+Phishing attacks involve malicious emails designed to trick users into revealing sensitive
+information such as login credentials, financial data, or corporate information.
+These attacks may contain malicious links, attachments, or fraudulent requests.
+</p>
+
+<p>
+This runbook outlines the procedures required to detect, analyse, contain,
+eradicate, recover from, and review phishing incidents.
+</p>
+
+</div>
+
+
+<!-- Incident Management Summary -->
+
+<div class="policy-section">
+
+<h2>Incident Management Summary</h2>
+
+<table>
+
+<tr>
+<th>Question</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>What is the incident?</td>
+<td>Phishing emails impersonating trusted organisations to steal credentials or distribute malware.</td>
+</tr>
+
+<tr>
+<td>Why should we care?</td>
+<td>Phishing is one of the most common attack vectors and can lead to credential compromise, data breaches, or ransomware.</td>
+</tr>
+
+<tr>
+<td>How do we respond?</td>
+<td>Security teams detect suspicious emails, investigate the scope of the attack, isolate affected accounts, and remove malicious emails.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- Response Procedures -->
+
+<div class="policy-section">
+
+<h2>Response Procedures</h2>
+
+
+<h3>Detection Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>End User</td>
+<td>Report suspicious emails, unusual login alerts, or unexpected credential requests.</td>
+</tr>
+
+<tr>
+<td>Help Desk</td>
+<td>Create an incident ticket and collect details about the suspicious email.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Monitor email security gateway alerts, SIEM logs, and phishing reports.</td>
+</tr>
+
+</table>
+
+
+<h3>Analysis Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Analyse email headers, links, and attachments to identify phishing indicators.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Review email server logs and determine how many users received the phishing email.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Assess business impact and determine escalation level.</td>
+</tr>
+
+</table>
+
+
+<h3>Containment Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Block malicious domains, IP addresses, and sender accounts.</td>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Remove phishing emails from affected inboxes.</td>
+</tr>
+
+<tr>
+<td>Help Desk</td>
+<td>Notify affected users and instruct them not to interact with the email.</td>
+</tr>
+
+</table>
+
+
+<h3>Eradication Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Reset compromised passwords and enforce MFA where required.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Perform malware scans on any affected endpoints.</td>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Approve security improvements and policy updates.</td>
+</tr>
+
+</table>
+
+
+<h3>Recovery Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>IT Operations</td>
+<td>Restore affected systems and validate user accounts.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Monitor for further phishing attempts.</td>
+</tr>
+
+<tr>
+<td>Business Units</td>
+<td>Confirm normal operations have resumed.</td>
+</tr>
+
+</table>
+
+
+<h3>Post-Incident Phase</h3>
+
+<table>
+
+<tr>
+<th>Team</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>CISO</td>
+<td>Conduct lessons-learned meeting.</td>
+</tr>
+
+<tr>
+<td>Cybersecurity</td>
+<td>Document findings and update detection rules.</td>
+</tr>
+
+<tr>
+<td>HR / Training</td>
+<td>Deliver phishing awareness training to employees.</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="form-actions">
+
+<button id="runbook-submit" type="button" class="btn-primary">
+Download Runbook
+</button>
+
+    <button id="shareRunbook" class="btn-main">
+      Share Runbook
+    </button>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

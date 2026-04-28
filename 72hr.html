@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>72-Hour Incident Report</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <span class="nav-title">Global Security & Risk</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Questionnaire</a>
+    <a href="24hr.html" class="nav-link">24-Hour Report</a>
+    <a href="72hr.html" class="nav-link">72-Hour Report</a>
+    <a href="policy.html" class="nav-link">Incident Policy</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+
+    <div class="dropdown">
+      <button class="nav-link dropdown-btn">Runbooks</button>
+
+      <div class="dropdown-content">
+        <a href="data-breach-runbook.html">Data Breach Runbook</a>
+        <a href="ransomware-runbook.html">Ransomware Runbook</a>
+        <a href="phishing-runbook.html">Phishing Runbook</a>
+        <a href="ddos-runbook.html">DDoS Runbook</a>
+      </div>
+            </div>
+
+      <a href="results.html" class="nav-link">Results</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- REPORT FORM -->
+
+<div class="report-container">
+
+<div class="report-card">
+<div class="report-title">
+72-Hour Detailed Incident Report
+</div>
+
+<div class="report-subtitle">
+Submit detailed incident report within 72 hours of detection
+</div>
+
+
+<!-- Organisation Details -->
+
+<div class="report-section">
+
+<h2>Organisation Details</h2>
+<label>Organisation Name</label>
+
+<input type="text" class="report-input">
+<label>Sector</label>
+      <label>Sector</label>
+      <select class="report-select">
+        <option>Essential</option>
+        <option>Important</option>
+      </select>
+<label>Address</label>
+<textarea class="report-textarea"></textarea>
+
+<label>Point of Contact Name</label>
+<input type="text" class="report-input">
+
+<label>Email</label>
+<input type="email" class="report-input">
+
+<label>Phone</label>
+<input type="text" class="report-input">
+
+<label>Role</label>
+<input type="text" class="report-input">
+
+</div>
+
+
+<!-- Incident Overview -->
+
+<div class="report-section">
+<h2>Incident Overview</h2>
+
+<label>Incident Title</label>
+<input type="text" class="report-input">
+
+<label>Incident ID</label>
+<input type="text" class="report-input">
+
+<label>Date & Time Detected</label>
+<input type="datetime-local" class="report-input">
+
+<label>Date & Time Started</label>
+<input type="datetime-local" class="report-input">
+
+<label>Date & Time Submitted</label>
+<input type="datetime-local" class="report-input">
+
+<label>Reported within 72 Hours</label>
+
+<div class="report-checkbox-group">
+
+<label><input type="checkbox"> Yes</label>
+<label><input type="checkbox"> No</label>
+
+</div>
+
+</div>
+
+
+<!-- Incident Description -->
+
+<div class="report-section">
+
+<h2>Incident Description</h2>
+<label>Type of Incident</label>
+
+<div class="report-checkbox-group">
+
+<label><input type="checkbox"> Ransomware</label>
+<label><input type="checkbox"> DDoS</label>
+<label><input type="checkbox"> Data Breach</label>
+<label><input type="checkbox"> Malware</label>
+<label><input type="checkbox"> Unauthorised Access</label>
+<label><input type="checkbox"> Other</label>
+
+</div>
+
+<label>How was the incident detected</label>
+<textarea class="report-textarea"></textarea>
+<label>Systems Affected</label>
+<textarea class="report-textarea"></textarea>
+<label>Services Affected</label>
+<textarea class="report-textarea"></textarea>
+
+</div>
+
+
+<!-- Impact Assessment -->
+
+<div class="report-section">
+
+<h2>Impact Assessment</h2>
+
+<label>Operational Impact</label>
+<textarea class="report-textarea"></textarea>
+<label>Data Compromised</label>
+
+<div class="report-checkbox-group">
+
+<label><input type="checkbox"> Yes</label>
+<label><input type="checkbox"> No</label>
+<label><input type="checkbox"> Unknown</label>
+
+</div>
+
+<label>Type of Data</label>
+
+<textarea class="report-textarea"></textarea>
+<label>Number of Systems Affected</label>
+<input type="text" class="report-input">
+<label>Geographical Impact</label>
+<input type="text" class="report-input">
+<label>Severity Level</label>
+<select class="report-select">
+
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+<option>Critical</option>
+
+</select>
+</div>
+
+<!-- The Cause of Attack -->
+<div class="report-section">
+
+<h2>Incident Cause</h2>
+<label>Root Cause</label>
+
+<textarea class="report-textarea"></textarea>
+<label>Threat Actor</label>
+<input type="text" class="report-input">
+<label>Attack Vector</label>
+<textarea class="report-textarea"></textarea>
+
+</div>
+
+<!-- Mitigation Techniques -->
+<div class="report-section">
+<h2>Mitigation Measures</h2>
+<label>Actions Taken</label>
+
+<textarea class="report-textarea"></textarea>
+
+<div class="report-checkbox-group">
+
+<label><input type="checkbox"> Systems Isolated</label>
+<label><input type="checkbox"> Credentials Reset</label>
+<label><input type="checkbox"> Malware Removed</label>
+<label><input type="checkbox"> Services Restored</label>
+<label><input type="checkbox"> Ongoing</label>
+
+</div>
+</div>
+
+<!-- Additional Information -->
+
+<div class="report-section">
+<h2>Additional Information</h2>
+<label>Indicators of Compromise</label>
+
+<textarea class="report-textarea"></textarea>
+
+<label>Logs Available</label>
+<div class="report-checkbox-group">
+<label><input type="checkbox"> Yes</label>
+<label><input type="checkbox"> No</label>
+
+</div>
+</div>
+
+
+<!-- Sign Off -->
+
+<div class="report-section">
+<h2>Sign Off</h2>
+
+<label>Name</label>
+<input type="text" class="report-input">
+<label>Position</label>
+<input type="text" class="report-input">
+<label>Date</label>
+<input type="date" class="report-input">
+
+</div>
+
+<!-- Submit -->
+<button class="btn-main" id="report-submit">
+Submit Report
+</button>
+
+  <button id="shareEmail" class="btn-main">
+    Share via Email
+  </button>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

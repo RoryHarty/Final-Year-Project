@@ -1,0 +1,416 @@
+/* --------------------------------------
+Navigation Bar 
+-----------------------------------------*/
+.navbar {
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #673ab7;
+  color: white;
+
+  padding: 14px 24px;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+  z-index: 1000;
+
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.checkbox-option input {
+  flex-shrink: 0;
+  margin-top: 4px;
+  transform: scale(1.2);
+}
+
+
+/* ---------------------------------
+Global Styling (All Pages)
+------------------------------------ */
+body{
+  font-family: Arial, sans-serif;
+  background:#f1f3f4;
+  padding:0;
+  color:#202124;
+}
+
+/* -----------------------------------
+Questionnaire Styling
+-------------------------------------- */
+.container{
+  max-width:640px;
+  margin:30px auto 0 auto;
+}
+
+/* Heading  */
+.form-header{
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+  border-top: 8px solid #673ab7; /* Google Forms purple */
+  margin-bottom: 16px;
+}
+
+.form-header h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+
+/* Subtitle */
+.form-header p{
+  margin: 0;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* Each question card */
+.question-card{
+  background:#fff;
+  border-radius:12px;
+  padding:18px 20px;
+  box-shadow:0 1px 2px rgba(0,0,0,.12);
+  margin-bottom:14px;
+}
+
+/* Question text */
+.question{
+  font-size:16px;
+  font-weight:600;
+  margin:0 0 12px 0;
+}
+
+/*Required" text */
+.required{
+  color:#d93025;
+  font-weight:600;
+  margin-left:6px;
+  font-size:14px;
+}
+
+/* Options layout */
+.options{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* Radio option row */
+.option{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border:1px solid #dadce0;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.15s;
+}
+
+
+.option:hover{
+  background:#f8f9fa;
+}
+
+/* Radio size */
+.option input[type="radio"]{
+  transform:scale(1.15);
+  cursor:pointer;
+}
+
+/* Submit section */
+.form-actions{
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* ---------------------------------
+Submit button 
+------------------------------------*/
+.btn-primary{
+  background-color: #1a73e8;
+  color: white;
+  
+  border:none;
+  border-radius: 6px;
+  
+  padding: 10px 24px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn-primary:hover{
+  background-color: #1669c1;
+}
+
+/* Disabling submit button until form is completed */
+.btn-primary:disabled {
+  background-color: #9aa0a6;
+  cursor: not-allowed;
+}
+
+/* ------------------------------------
+Download Report Button 
+---------------------------------------*/
+.btn-secondary{
+    background-color: #1a73e8;
+    color: white;
+    
+    border:none;
+    border-radius: 6px;
+
+    padding: 10px 24px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* -----------------------------------------------------------------
+Incident Response Policy Document
+--------------------------------------------------------------------*/
+
+.policy-container {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.policy-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 40px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+
+  border-top: 8px solid #673ab7;
+}
+
+.policy-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.policy-subtitle {
+  font-size: 14px;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+.policy-section {
+  margin-bottom: 30px;
+}
+
+.policy-section h2 {
+  font-size: 20px;
+  color: #673ab7;
+  margin-bottom: 10px;
+}
+
+.policy-section h3 {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.policy-section p {
+  line-height: 1.6;
+  color: #202124;
+}
+
+.policy-section ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.policy-section li {
+  margin-bottom: 5px;
+}
+
+
+/* -----------------------------------------------------------------
+24-Hour Incident Report
+72-Hour Incident Report
+--------------------------------------------------------------------*/
+
+.report-container{
+  max-width:800px;
+  margin:30px auto;
+}
+
+.report-card{
+  background:white;
+  border-radius:12px;
+  padding:30px;
+  box-shadow:0 2px 6px rgba(0,0,0,.15);
+  border-top:8px solid #673ab7;
+}
+
+.report-title{
+  font-size:28px;
+  font-weight:600;
+}
+
+.report-subtitle{
+  color:#5f6368;
+  margin-bottom:25px;
+}
+
+.report-section{
+  margin-bottom:25px;
+}
+
+.report-input,
+.report-textarea,
+.report-select{
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #dadce0;
+  margin-bottom:15px;
+}
+
+.report-textarea{
+  min-height:120px;
+}
+
+.report-checkbox-group label{
+  display:block;
+  margin-bottom:5px;
+}
+
+.btn-main{
+  background:#1a73e8;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* -----------------------------
+Runbook Dropdown Menu
+------------------------------ */
+
+/* Runbook Dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: white;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;           /* attaches directly to button */
+  left: 0;
+  background: white;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Show dropdown when hovering anywhere in dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: #202124;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background: #f1f3f4;
+}
+
+/* ---------------------------------
+Runbook Tables
+------------------------------------*/
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+th, td{
+  border:1px solid #dadce0;
+  padding:10px;
+  text-align:left;
+  vertical-align:top;
+}
+
+th{
+  background:#f8f9fa;
+  font-weight:600;
+}
+
+tr:nth-child(even){
+  background:#fafafa;
+}
